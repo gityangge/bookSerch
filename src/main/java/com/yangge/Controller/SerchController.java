@@ -28,6 +28,7 @@ public class SerchController {
 //        return serchService.getPageList(bookName,url);
     return  serchService.getBookFromMiaoBiGe(bookName);
     }
+    /*这个是打包的测试接口*/
     @RequestMapping(value = "test")
     public void test(@RequestParam(value = "bookName") String bookName){
         packageService.packageBook(bookName,0);
